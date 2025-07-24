@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Bear Ninja Hunter Game</title>
   <style>
-    /* Simple styling for display */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
-      padding: 2rem;
-      color: #333;
+      background-color: #f0f4f8;
+      padding: 20px;
+      color: #222;
     }
 
     h1 {
       text-align: center;
-      color: #5e4b32;
+      color: #3a3a3a;
     }
 
-    #game-output {
-      margin-top: 2rem;
-      padding: 1rem;
+    #demo {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #ffffff;
       border: 2px solid #ccc;
-      background-color: #fffce5;
       border-radius: 8px;
+      font-size: 1.2rem;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Bear Ninja Hunter!</h1>
-  <div id="game-output">
-    <!-- Game result will be displayed here -->
-  </div>
+
+  <h1>Bear Ninja Hunter</h1>
+  <p id="demo">Replace this content with the calculated sum</p>
 
   <script>
-    // Step 1: Prompt the user for their name
-    let playerName = prompt("Welcome to Bear Ninja Hunter. Please enter your name:");
+    // Prompt for player's name and store it
+    let userName = prompt("Welcome to Bear Ninja Hunter. Please enter your name:");
 
-    // Step 2: Alert the user with a personalized message
-    alert("Welcome, " + playerName + "! Let's begin the game!");
+    // Create a personalized greeting and alert it
+    alert("Welcome, " + userName + "! Let's begin the game!");
 
-    // Step 3: Prompt the user to make a choice
-    let playerChoice = prompt("Choose your fighter: Bear 🐻, Ninja 🥷, or Hunter 🧑‍🌾");
+    // Prompt user for their game choice
+    let userChoice = prompt("Choose your fighter: Bear 🐻, Ninja 🥷, or Hunter 🧑‍🌾");
 
-    // Step 4: Hard-coded computer choice
+    // Hard-coded computer choice
     let computerChoice = "Bear";
 
-    // Step 5: Compose personalized game result message
-    let gameMessage = "Hello " + playerName + "! You chose: " + playerChoice +
-                      ". The computer chose: " + computerChoice + ".";
+    // Construct game result message
+    let resultMessage = "Hello " + userName + "! You chose: " + userChoice + 
+                        ". The computer chose: " + computerChoice + ".";
 
-    // Step 6: Display the result in the HTML page
-    document.getElementById("game-output").innerHTML = gameMessage;
+    // Print result to HTML
+    document.getElementById("demo").innerHTML = resultMessage;
 
-    // Step 7: Log the result to the console
-    console.log(gameMessage);
+    // Also log the result to the console
+    console.log(resultMessage);
   </script>
+
 </body>
 </html>
